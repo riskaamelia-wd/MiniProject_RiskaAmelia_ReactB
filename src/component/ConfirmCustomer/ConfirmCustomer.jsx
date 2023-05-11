@@ -130,7 +130,7 @@ const ConfirmCustomer = () => {
                                 <tr>
                                     <th>Address</th>
                                     <td> : </td>
-                                    <td>{item.address} , {item.city}, {item.province}</td>
+                                    <td>{item.additionalAddress} {item.address} , {item.city}, {item.province}, {item.zipCode} </td>
                                 </tr>
                             </table>
                         </div>
