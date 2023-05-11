@@ -1,0 +1,70 @@
+body{
+    max-width: 100%;
+}
+.jumbotronLeft{
+    margin-top: 250px;
+    margin-left: 90px;
+}
+
+.jumbotronRight{
+    margin-left: -180px;
+    background-size:     cover;
+}
+
+.oranye{
+    background-color: #E7B365;
+}
+
+*{
+    color: #1e1e1e;
+}
+
+.jumbotronLeft button{
+    /* margin-left: -430px;
+    border-radius: 30px; */
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#linear{
+    background: linear-gradient(180deg, #E6B161 0%, #FFFFFF 100%)
+}
+
+h2{
+    font-size: 64px;
+}
+
+.text-32{
+    font-size: 32px;
+}
+.text-18{
+    font-size: 18px;
+}
+@media only screen and (max-width: 768px){
+    /* body{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    } */
+
+    .text{
+        visibility: hidden;
+    }
+
+    
+
+    .backgroundImage{
+        width: 0%;
+    }
+
+    .btn-top{
+        margin-top: -200px;
+    }
+
+    h2{
+        font-size: 32px;
+    }
+
+    .text-32{
+        font-size: 18px;
+    }
+  }
