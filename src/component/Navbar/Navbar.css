@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+nav{
+    max-width: 100%;
+}
+
+.icon{
+    padding: 2px;
+    width: 75%;
+}
+a:hover{
+    opacity: 0.5;
+}
+#color{
+    color: #1E1E1E;
+}
+
+*{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 975px){
+    .hidden{
+        visibility: hidden;
+    }
+
+  }
