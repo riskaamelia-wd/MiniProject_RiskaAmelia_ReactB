@@ -17,7 +17,7 @@ const validate = values => {
 
     if (!values.name){
         errors.name = 'Required'
-    } else if (!/^[a-zA-Z]+$/.test(values.name)){
+    } else if (!/^[a-zA-Z\u00C0-\u00FF ]*$/.test(values.name)){
         errors.name = 'Symbol and number is not allowed'
     }
 
@@ -41,13 +41,13 @@ const validate = values => {
 
     if(!values.city){
         errors.city = "Required"
-    } else if(!/^[a-zA-Z]+$/.test(values.city)){
+    } else if(!/^[a-zA-Z\u00C0-\u00FF ]*$/.test(values.city)){
         errors.city = "Symbol and number is not allowed"
     }
 
     if(!values.province){
         errors.province = 'Required'
-    } else if(!/^[a-zA-Z]+$/i.test(values.province)){
+    } else if(!/^[a-zA-Z\u00C0-\u00FF ]*$/i.test(values.province)){
         errors.province = "Symbol and number is not allowed"
     }
 
