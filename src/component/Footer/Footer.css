@@ -1,0 +1,15 @@
+a:link{
+    color: #1E1E1E;
+    text-decoration: none;
+}
+
+#linearColor{
+    background: linear-gradient(180deg, #FFFFFF 0%, #E7B365 100%);
+}
+
+@media only screen and (max-width: 980px){
+    .logoFooter{
+        visibility: hidden;
+        /* margin-top: -200px; */
+    }
+}
