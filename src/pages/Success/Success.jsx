@@ -80,7 +80,7 @@ const Success = () => {
                                     </div>
                                     <div className="marginLeft">
                                         <p>Shipping Address</p>
-                                        <p>{item.address} , {item.city}, {item.province}</p>
+                                        <p>{item.additionalAddress} {item.address} , {item.city}, {item.province}, {item.zipCode}</p>
                                     </div>
                                 </div>
                                 <hr />
