@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <div id='linearColor'>
             
-        <div className='d-flex flex-row justify-content-around row m-2'>
+        {/* <div className='d-flex flex-row justify-content-around row m-2'>
             <img src={logo} alt="" className='logoFooter col-lg-2'/>
             <div className="col-lg-2 col-6 col-md-3 row ms-lg-3" style={{textAlign:'left'}}>
                     <p className="col-12 fw-bold">Useful Links</p>
@@ -80,7 +80,7 @@ const Footer = () => {
                     name="name"
                 />
             </div>
-        </div>
+        </div> */}
             <hr />
             <div className='d-flex justify-content-center  ms-3 me-3 row'>
                 <div className='col-6 text-center'>

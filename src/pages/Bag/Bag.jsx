@@ -169,27 +169,29 @@ const Bag = () => {
                     </div>
                         
                 </div>
-                <div className="col-md-4 mt-4 end-0 me-3">
-                        <div className="border border-secondary-subtle rounded shadow-sm" style={{marginTop:'-30px'}}>
-                        <div className="container-fluid">
-                <h3 className="text-center mt-3">Order Total</h3>
-                <hr />
-                </div>
-                <div className="d-flex flex-row justify-content-between me-3 ms-3">
-                    <h5>Total</h5>
-                    <p>$ {subTotal}</p>
-                </div>
-                <div className="d-flex justify-content-center m-3">
-                    <Button
-                        className='btn oranye ps-5 pe-5'
-                        text='Checkout'
-                        onClick={handleCheckout}
-                    />
-                </div>
+                    <div className="col-md-4 mt-4 end-0 me-3">
+                            <div className="border border-secondary-subtle rounded shadow-sm" style={{marginTop:'-30px'}}>
+                            <div className="container-fluid">
+                    <h3 className="text-center mt-3">Order Total</h3>
+                    <hr />
+                    </div>
+                    <div className="d-flex flex-row justify-content-between me-3 ms-3">
+                        <h5>Total</h5>
+                        <p>$ {subTotal}</p>
+                    </div>
+                    <div className="d-flex justify-content-center m-3">
+                        <Button
+                            disabled={subTotal==0}
+                            className='btn oranye ps-5 pe-5'
+                            text='Checkout'
+                            onClick={handleCheckout}
+                        />
+                    </div>
 
-                        </div>
-  
-            </div>
+                </div>
+    
+                    </div>
+                
             </div>
 
         </>

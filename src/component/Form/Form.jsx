@@ -32,11 +32,11 @@ const validate = values => {
         errors.email = "Invalid email address"
     }
 
-    if (!values.address){
-        errors.address = 'Required'
-    } else if (!/^[0-9a-zA-Z]+$/.test(values.address)){
-        errors.address = 'Symbol is not allowed'
-    }
+    // if (!values.address){
+    //     errors.address = 'Required'
+    // } else if (!/^[0-9a-zA-Z]+$/.test(values.address)){
+    //     errors.address = 'Symbol is not allowed'
+    // }
 
     if(!values.city){
         errors.city = "Required"

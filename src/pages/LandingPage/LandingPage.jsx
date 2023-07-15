@@ -90,21 +90,32 @@ function LandingPage() {
                     <Product/>
                 </div>
             </div>
-            <div className='row mb-lg-4 mt-lg-4' id='about'>
-                <div className='col-lg-7 col-md-6 ms-lg-5 m-0 m-md-4'>
-                    <h2 className='text-center'>About Us</h2>
-                    <p>Our story began with a love for all things sparkly and beautiful. We started creating our own jewelry pieces as a hobby, but soon realized that we wanted to share our creations with others. So, we decided to turn our passion into a business and launch our own jewelry store.</p>
-                    <p>
-                    At our store, we offer a wide range of jewelry pieces, from dainty necklaces and bracelets to statement earrings and rings. We carefully handpick each piece to ensure that it meets our high standards of quality and style. We also strive to keep our prices affordable, so that everyone can enjoy beautiful jewelry without breaking the bank.
-                    </p>
-                </div>
-                <div className='col-md-5 col-lg-3 ms-lg-5 mt-md-5 ms-1'>
-                    <img style={{width:"100%"}} src={bg2} alt="" />
+            <div id='linearColor'>
+                <div className='row mb-lg-4 mt-lg-4' id='about'>
+                    <div className='col-lg-7 col-md-6 ms-lg-5 m-0 m-md-4'>
+                        <h2 className='text-center'>About Us</h2>
+                        <p>Our story began with a love for all things sparkly and beautiful. We started creating our own jewelry pieces as a hobby, but soon realized that we wanted to share our creations with others. So, we decided to turn our passion into a business and launch our own jewelry store.</p>
+                        <p>
+                        At our store, we offer a wide range of jewelry pieces, from dainty necklaces and bracelets to statement earrings and rings. We carefully handpick each piece to ensure that it meets our high standards of quality and style. We also strive to keep our prices affordable, so that everyone can enjoy beautiful jewelry without breaking the bank.
+                        </p>
+                    </div>
+                    <div className='col-md-5 col-lg-3 ms-lg-5 mt-md-5 ms-1'>
+                        <img style={{width:"100%"}} src={bg2} alt="" />
+                    </div>
+                </div> 
+                <hr />
+                <div className='d-flex justify-content-center  ms-3 me-3 row'>
+                    <div className='col-6 text-center'>
+                        <p>© Classy, Inc. 2023. We love our customers!</p>
+                    </div>
+                    {/* <div className='col-6'>
+                        <p>Follow us : </p>
+                    </div> */}
                 </div>
             </div>
-            <div className='marginTop'>
+            {/* <div className='marginTop'>
             <Footer/>
-            </div>
+            </div> */}
         </>
     )
 }

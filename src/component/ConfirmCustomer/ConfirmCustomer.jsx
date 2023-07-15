@@ -9,6 +9,7 @@ import './ConfirmCustomer.css'
 import { deleteAllBag, editCustomerProduct, deleteCustomer } from "../../graphql/mutation"
 import PopUp from "../../element/PopUp"
 import { Link } from "react-router-dom"
+import emailjs from "@emailjs/browser";
 
 const ConfirmCustomer = () => {
     const location = useLocation()
@@ -43,6 +44,9 @@ const ConfirmCustomer = () => {
 
     const nameBag = dataCart?.bag.map((item) => item.bag_product.name)
     const quantityBag = dataCart?.bag.map((item) => item.quantity)
+
+    const nameCustomer = data?.customer.map((item) => item.name)
+    const emailCustomer = data?.customer.map((item) => item.email)
     
     const stringNameBag = nameBag?.toString()
     const stringQuantityBag = quantityBag?.toString()
@@ -61,8 +65,31 @@ const ConfirmCustomer = () => {
 
     const navigate = useNavigate()
 
-    const handleClick = async () => {
-        
+    const handleClick = async (e) => {
+        e.preventDefault()
+        emailjs
+            .send(
+                "service_64psw08",
+                "template_pzdf5ll",
+                {
+                    name:nameCustomer,
+                    nameBag:stringNameBag,
+                    quantityBag:stringQuantityBag,
+                    total:stringTotal,
+                    email:emailCustomer,
+                },
+                "I4cPlwo89-sE8dr1w"
+            )
+            .then(
+                (result) => {
+                console.log(result.text);
+                },
+                (error) => {
+                console.log(error.text);
+                }
+            );
+        //     e.target.reset();
+        // };
         await updateCustomer({
             variables:{
                 id : id,
@@ -130,7 +157,7 @@ const ConfirmCustomer = () => {
                                 <tr>
                                     <th>Address</th>
                                     <td> : </td>
-                                    <td>{item.additionalAddress} {item.address} , {item.city}, {item.province}, {item.zipCode} </td>
+                                    <td>{item.additionalAddress}, {item.address} , {item.city}, {item.province}, {item.zipCode} </td>
                                 </tr>
                             </table>
                         </div>
