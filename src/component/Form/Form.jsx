@@ -65,7 +65,7 @@ const validate = values => {
     if(!values.cvv){
         errors.cvv = 'Required'
     } else if(!/^[0-9]{3,4}$/i.test(values.cvv)){
-        errors.cvv = "Invalid email address"
+        errors.cvv = "Invalid CVV"
     }
 
     if (!values.expDate){

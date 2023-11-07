@@ -33,11 +33,11 @@ const validate = values => {
         errors.email = "Invalid email address"
     }
 
-    if (!values.address){
-        errors.address = 'Required'
-    } else if (!/^[0-9a-zA-Z]+$/.test(values.address)){
-        errors.address = 'Symbol is not allowed'
-    }
+    // if (!values.address){
+    //     errors.address = 'Required'
+    // } else if (!/^[0-9a-zA-Z]+$/.test(values.address)){
+    //     errors.address = 'Symbol is not allowed'
+    // }
 
     if(!values.city){
         errors.city = "Required"
@@ -66,7 +66,7 @@ const validate = values => {
     if(!values.cvv){
         errors.cvv = 'Required'
     } else if(!/^[0-9]{3,4}$/i.test(values.cvv)){
-        errors.cvv = "Invalid email address"
+        errors.cvv = "Invalid CVV"
     }
 
     if (!values.expDate){
